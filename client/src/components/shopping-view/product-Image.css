@@ -1,0 +1,29 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: 600px;
+    cursor: crosshair;
+  }
+  
+  .zoom-dialog {
+    position: absolute; /* Changed from fixed to absolute */
+    width: 400px;
+    height: 400px;
+    border: 2px solid #ccc;
+    background-repeat: no-repeat;
+    background-size: 300%; /* Zoom level */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    pointer-events: none; /* This prevents mouse events on the dialog */
+}
+
+
+.zoom-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8; /* Adjust opacity */
+    pointer-events: none; /* Prevent icon from interfering with mouse events */
+}
