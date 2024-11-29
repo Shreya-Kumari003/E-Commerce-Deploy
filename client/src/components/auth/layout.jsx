@@ -43,7 +43,13 @@ function AuthLayout() {
           </h1>
         </div>
       </div>
-      <div className="flex flex-1 items-center justify-center bg-background px-4 py-12 sm:px-6 lg:px-8">
+      {/* <div className="flex flex-1 items-center justify-center px-4 py-12 sm:px-6 lg:px-8"> */}
+      <div
+  className="flex flex-1 items-center justify-center px-4 py-12 sm:px-6 lg:px-8"
+  style={{
+    background: 'radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%)',
+  }}
+>
         <Outlet />
       </div>
     </div>

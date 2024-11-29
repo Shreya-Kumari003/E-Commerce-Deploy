@@ -101,7 +101,7 @@ function HeaderRightContent() {
   }, [dispatch]);
 
   return (
-    <div className="flex lg:items-center lg:flex-row flex-col gap-4">
+    <div className="flex lg:items-center lg:flex-row flex-col gap-4"> 
       <Sheet open={openCartSheet} onOpenChange={() => setOpenCartSheet(false)}>
         <Button onClick={() => setOpenCartSheet(true)} variant="outline"
           size="icon"
@@ -150,7 +150,7 @@ function ShoppingHeader() {
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
-      <div className="flex h-16 items-center justify-between px-4 md:px-6">
+      <div className="flex h-16 items-center justify-between px-4 md:px-6 bg-pink-300">
         <Link to="/shop/home" className="flex items-center gap-2">
           {style_sphere()}
           {/* <span className="font-bold">Style Sphere</span> */}
